@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Title</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../bootstrap3/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="../../assets/css/gsdk.css" rel="stylesheet" />
+    <link href="../../assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Font Awesome     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+		<link href="../../css/search_look.css" rel="stylesheet" />
+		<link href="../../css/table.css" rel="stylesheet" />
+
+</head>
+
+<body>
+ <div id="navbar-full">
+    <div id="navbar">
+    <!--
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+        -->
+        <nav class="navbar navbar-ct-orange navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#gsdk" data-toggle="modal" data-target="#myModal">Vectors and Forces</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end navbar -->
+
+</div> <!-- end menu-dropdown -->
+<div id="mpc_start_code" class="16"></div>
+<!--
+<div id="mpc_start_code" class="number of question here"></div>
+<div class="on" id="q(question number here)">
+	<div class="normal" id="q(question number here)ans">Answer here</div>
+	<button onclick="show_answer(0);" id="q(question number here)btn">Show answer</button>
+</div>
+I recommend you do this in order or suffer the conseqences
+ -->
+<div class="main">
+    <div class="container tim-container" style="max-width:800px; padding-top:100px">
+			<!-- PS P1 2013 1.1 c-->
+			<div class="on" id="q1">
+				Consider the following vector diagram:
+				The vector which represents the resultant of the other two, is …
+				<p><img src="img/vector diagram1.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				A AB.<br />
+				B AC.
+				<div class="normal" id="q1ans">C CB.</div>
+				D BA.<br />
+				<button onclick="show_answer(0);" id="q1btn">Show answer</button>
+			</div>
+			<!-- PS P1 2013 1.2 c-->
+			<div class="off" id="q2">
+				Two forces of magnitudes 11 N and 5 N respectively, act simultaneously on
+				an object. Which ONE of the following CANNOT be the resultant of the two
+				forces?
+				<div class="normal" id="q2ans">A 5 N</div>
+				B 7 N<br />
+				C 9 N<br />
+				D 16 N<br />
+				<button onclick="show_answer(1);" id="q2btn">Show answer</button>
+			</div>
+			<!-- PS P1 2013 1.1 c-->
+			<div class="off" id="q3">
+				A ball is dropped onto a concrete floor and bounces off the floor to the same
+				height from which it was dropped. Which ONE of the following laws best
+				explains why the ball experiences an upward force?<br /><br />
+				A Newton's first law of motion<br />
+				B Newton's second law of motion <br />
+				<div class="normal" id="q3ans">C Newton's third law of motion</div>
+				D Newton's law of universal gravitation<br />
+				<button onclick="show_answer(2);" id="q3btn">Show answer</button>
+			</div>
+			<!-- PS P1 2013 1.4 a-->
+			<div class="off" id="q4">
+				A boy stands on a scale in a lift. The scale registers a reading of 588 N when
+				the lift is stationary. The lift now starts moving. At one instant during its
+				motion, the scale registers a reading of 600 N.<br /><br />
+				Which ONE of the following CORRECTLY describes the motion of the lift at
+				this instant?<br /><br />
+				The lift is …<br />
+					<div class="normal" id="q4ans">A accelerating upwards.</div>
+				B accelerating downwards<br />
+				C moving upwards at constant velocity<br />
+				D moving downwards at constant velocity<br />
+				<button onclick="show_answer(3);" id="q4btn">Show answer</button>
+			</div>
+			<div class="off" id="q5">
+				Vector P and vector –P are acting on a common point O. The angle between
+				the two vectors is ...<br /><br />
+				A 0&deg;<br />
+				B 90&deg;
+				<div class="normal" id="q5ans">C 180&deg;</div>
+				D 270&deg;<br />
+				<button onclick="show_answer(4);" id="q5btn">Show answer</button>
+			</div>
+			<div class="off" id="q6">
+				The statements below refer to scalars and vectors:<br /><br />
+				<strong>(i)</strong> Vectors can be added together but scalars cannot.<br />
+				<strong>(ii)</strong> A scalar quantity can be associated with direction.<br />
+				<strong>(iii)</strong> A vector quantity is always associated with direction.<br />
+				Which of the statements above are TRUE?<br /><br />
+				A <strong>(i)</strong> and <strong>(ii)</strong> only<br />
+				B <strong>(ii)</strong> and <strong>(iii)</strong> only<br />
+				C <strong>(i)</strong> only<br />
+				<div class="normal" id="q6ans">D <strong>(iii)</strong> only</div>
+				<button onclick="show_answer(5);" id="q6btn">Show answer</button>
+			</div>
+			<div class="off" id="q7">
+				A net force, <strong>F</strong>, is applied on an object of mass <strong><i>m</i></strong> kg and causes an acceleration of <strong><i>a</i></strong> m∙s<sup>-2</sup> . When the net force, <strong>F</strong>, on the same object is doubled,
+				the resulting acceleration, in m∙s<sup>-2</sup> , will be ...<br /><br />
+				A a<br />
+				B <sup>3</sup>/<sub>2</sub>a
+				<div class="normal" id="q7ans">C 2a</div>
+				D 3a<br />
+				<button onclick="show_answer(6);" id="q7btn">Show answer</button>
+			</div>
+			<div class="off" id="q8">
+				A person stands on a bathroom scale in a stationary elevator. The reading on
+				the scale is 490 N. When the elevator is in motion, the reading on the scale
+				changes to 470 N.<br /><br />
+				Which ONE of the following combinations best describes the DIRECTION OF
+				THE MOTION and the DIRECTION OF THE ACCELERATION of the elevator
+				during the motion?<br /><br />
+				<table>
+					<tr>
+						<th></th>
+						<th>DIRECTION OF THE MOTION</th>
+						<th>DIRECTION OF THE ACCELERATION</th>
+					</tr>
+					<tr>
+						<td>A</td>
+						<td>Upwards</td>
+						<td>Upwards</td>
+					</tr>
+					<tr class="normal" id="q8ans">
+						<td>B</td>
+						<td>Downwards</td>
+						<td>Downwards</td>
+
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>Upwards</td>
+						<td>Downwards and then upwards</td>
+					</tr>
+					<tr>
+						<td>D</td>
+						<td>Downwards</td>
+						<td>Upwards and then downwards</td>
+					</tr>
+				</table>
+				<button onclick="show_answer(7);" id="q8btn">Show answer</button>
+			</div>
+			<div class="off" id="q9">
+						Four forces act on a point, as indicated in the diagram.
+						<p><img src="img/vector diagram2.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+						The magnitudes of the components of the resultant (net) force in the
+						horizontal (F<sub>X</sub>) and vertical (F<sub>Y</sub>) directions are …<br /><br />
+						A F<sub>X</sub> = 3 N and F<sub>Y</sub> = 6 N<br />
+						B F<sub>X</sub> = 1 N and F<sub>Y</sub> = 4 N<br />
+						C F<sub>X</sub> = 2 N and F<sub>Y</sub> = 2 N
+				<div class="normal" id="q9ans">D F<sub>X</sub> = 4 N and F<sub>Y</sub> = 2 N</div>
+				<button onclick="show_answer(8);" id="q9btn">Show answer</button>
+			</div>
+			<div class="off" id="q10">
+				A lawnmower is pushed across the ground with a force of <strong>F</strong> at an angle of θ
+				with the horizontal. The weight of the lawnmower is <strong>w</strong>.
+				<p><img src="img/vector diagram3.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				The normal force, in <strong>N</strong>, on the lawnmower is …<br /><br />
+				A w
+				<div class="normal" id="q10ans">B w + F<sub>Y</sub></div>
+				C w - F<sub>Y</sub><br />
+				D w + F<sub>X</sub><br />
+				<button onclick="show_answer(9);" id="q10btn">Show answer</button>
+			</div>
+			<div class="off" id="q11">
+				A car is travelling along a road. The driver has his seat belt on. The driver
+				sees an obstruction in the road ahead and suddenly applies the brakes
+				<p><img src="img/vector diagram4.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				An action-reaction pair is the force of the seat belt on the driver and the force
+				of the …<br /><br />
+				A driver on the seat.<br />
+				B wheels on the road.<br />
+				<div class="normal" id="q11ans">C driver on the seat belt.</div>
+				D seat belt on the seat.<br />
+				<button onclick="show_answer(10);" id="q11btn">Show answer</button>
+			</div>
+			<div class="off" id="q12">
+				Planet X has a mass twice the mass of the Earth and a radius one and a half
+				times that of the Earth. If the acceleration due to gravity on the Earth is <strong>g</strong>,
+				then the gravitational acceleration on planet X will be …<br /><br />
+				<div class="normal" id="q12ans">A <sup>8</sup>/<sub>9</sub> g</div>
+				B <sup>9</sup>/<sub>8</sub> g<br />
+				C <sup>4</sup>/<sub>3</sub> g<br />
+				D <sup>3</sup>/<sub>4</sub> g<br />
+				<button onclick="show_answer(11);" id="q12btn">Show answer</button>
+			</div>
+			<div class="off" id="q13">
+				Which ONE of the following pairs of physical quantities is vector quantities?<br /><br />
+				A Force and distance<br />
+				B Velocity and speed<br />
+				C Charge and electric field
+				<div class="normal" id="q13ans">D Electric field and force</div>
+				<button onclick="show_answer(12);" id="q13btn">Show answer</button>
+			</div>
+			<div class="off" id="q14">
+				A light ray travels from medium A to medium B. Medium B has a lower
+				refractive index than medium A.<br /><br />
+				The critical angle for medium A in terms of medium B is 42&deg;.<br /><br />
+				Which ONE of the sketches below represents the CORRECT path of the
+				light ray?<br /><br />
+
+				<p><img src="img/vector diagram5.png" id="vector diagram5" name="vector diagram5" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				<button onclick="album_code('vector diagram','5');">Next diagram</button>
+
+				<div class="normal" id="q14ans">A A-Diagram</div>
+				B B-Diagram <br />
+				C C-Diagram <br />
+				D D-Diagram <br />
+				<button onclick="show_answer(13);" id="q14btn">Show answer</button>
+			</div>
+			<div class="off" id="q15">
+				A block with a mass of 4 kg is pulled upwards along a frictionless slope,
+				inclined at an angle θ, with a force F, as shown in the sketch below.
+				<p><img src="img/vector diagram6.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				A N = (4)(9,8)sinθ<br />
+				B N = F - (4)(9,8)cosθ<br />
+				C N = F + (4)(9,8)cosθ
+				<div class="normal" id="q15ans">D N = (4)(9,8)cosθ</div>
+				<button onclick="show_answer(14);" id="q15btn">Show answer</button>
+			</div>
+			<div class="off" id="q16">
+				A satellite orbits Earth at a height where the gravitational force is a quarter
+				(<sup>1</sup>/<sub>4</sub>) of the force it experiences on the surface of the Earth. If the radius of
+				Earth is R, the height of the satellite ABOVE THE SURFACE of Earth is …<br /><br />
+				A 4<strong>R</strong><br />
+				B 2<strong>R</strong><br />
+				<div class="normal" id="q16ans">C <strong>R</strong></div>
+				D <sup>1</sup>/<sub>2</sub><strong>R</strong><br />
+				<button onclick="show_answer(15);" id="q16btn">Show answer</button>
+			</div>
+			<button id="main_btn_pre" onclick="previous_question();">Previous</button>
+			<button id="main_btn_nex" onclick="next_question();">Next</button><br />
+
+           <!--     end extras -->
+    </div>
+	</div>
+
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Modal</h4>
+						</div>
+						<div class="modal-body">
+							Modal Content....
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+    <div class="space"></div>
+<!-- end container -->
+</div>
+<!-- end main -->
+
+</body>
+
+    <script src="../../main/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../assets/js/gsdk-checkbox.js"></script>
+	<script src="../../assets/js/gsdk-radio.js"></script>
+	<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="../../assets/js/get-shit-done.js"></script>
+	<script src="js/vectors.js" type="text/javascript"></script>
+    <script src="../../assets/js/custom.js"></script>
+
+</html>

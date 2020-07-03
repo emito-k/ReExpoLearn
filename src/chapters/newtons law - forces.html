@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Title</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../bootstrap3/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="../../assets/css/gsdk.css" rel="stylesheet" />
+    <link href="../../assets/css/demo.css" rel="stylesheet" />
+		<link href="../../css/table.css" rel="stylesheet" />
+
+
+    <!--     Font Awesome     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <div id="navbar-full">
+    <div id="navbar">
+    <!--
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+        -->
+        <nav class="navbar navbar-ct-orange navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#gsdk" data-toggle="modal" data-target="#myModal">Newtons laws - Forces</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end navbar -->
+
+</div> <!-- end menu-dropdown -->
+<div class="main">
+    <div class="container tim-container" style="max-width:800px; padding-top:50px">
+			<h4>Forces</h4>
+			<p>A force is a push or a pull action exerted on an object. This action can be exerted while objects are in contact (contact force) or over a distance (non-contact force).</p>
+			<p>Because forces have magnitude and direction, they are vectors. Force is measured in newton (N). 1 N is the force required to accelerate a 1 kg object at 1 m·s<sup>-2</sup> in the direction of the force. We can therefore say that 1 N = 1 kg·m·s<sup>-2</sup>.</p>
+			<table>
+				<tr>
+					<td>
+						<strong>Non-contact force: </strong>A force exerted between objects over a distance without physical contact.
+					</td>
+				</tr>
+				<tr><td>Electrostatic force</td></tr>
+				<tr><td>Gravitational force (F<sub>g</sub>)</td></tr>
+				<tr><td>Magnetic force</td></tr>
+			</table>
+			<p></p>
+			<table>
+				<tr>
+					<td>
+						<strong>Contact force: </strong>A force exerted between objects that are in contact with each other.
+					</td>
+				</tr>
+				<tr><td>Applied force (F<sub>A</sub>)</td></tr>
+				<tr><td>Tension (T or F<sub>T</sub>)</td></tr>
+				<tr><td>Friction (F<sub>f</sub> or f<sub>s</sub>/f<sub>k</sub>)</td></tr>
+				<tr><td>Normal force (F<sub>N</sub>)</td></tr>
+			</table>
+
+			<p>
+				<h6>Normal force (f<sub>N</sub>)</h6>
+				The perpendicular force exerted on by a surface on an object in contact with it.<br />
+				<p><img src="img/force diagram1.png" alt="Thumbnail Image" class="img-rounded"/></p>
+				The normal force is equal to the perpendicular component of gravity if there are no other forces acting on the object.
+				<table><tr><td>F<sub>N</sub> = F<sub>g</sub></td></tr></table>
+				If alternative forces act on the object, the normal force will change depending on the direction and magnitude of the applied force.
+				<p></p>
+				<table>
+					<tr>
+						<th>Pull</th>
+						<th>Push</th>
+					</tr>
+					<tr>
+						<td><p><img src="img/force diagram2.png" alt="Thumbnail Image" class="img-rounded"/></p></td>
+						<td>
+							F<sub>N</sub> + F<sub>A<small>y</small></sub> - F<sub>g</sub> = 0<br />
+							F<sub>N</sub> + F<sub>A</sub>sin θ = F<sub>g</sub>
+						</td>
+					</tr>
+					<tr>
+						<td><p><img src="img/force diagram3.png" alt="Thumbnail Image" class="img-rounded"/></p></td>
+						<td>
+							F<sub>N</sub> - F<sub>A<small>y</small></sub> - F<sub>g</sub> = 0<br />
+							F<sub>N</sub> = F<sub>g</sub>+ F<sub>A</sub>sin θ
+						</td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<h6>Tension (T or F<sub>T</sub>)</h6>
+				Objects suspended from a rope/string/cable have no normal force, as there is no surface on which the object rests. The tension is equal to the perpendicular component of gravity if there are no other forces acting on the object.
+				<p></p>
+				<table>
+					<tr>
+						<td><p><img src="img/force diagram4.png" alt="Thumbnail Image" class="img-rounded"/></p></td>
+						<td>F<sub>T</sub> + (-F<sub>g</sub>) = 0</td>
+					</tr>
+				</table>
+			</p>
+
+			<p>
+				<h6>Friction (F<sub>f</sub> or f<sub>s</sub>/f<sub>k</sub>)</h6>
+				Frictional force due to a surface is the force that opposes the motion of an object in contact with it.<br /><br />
+				Friction is the parallel component of the contact force on an object by the surface on which it rests. The
+				friction between the contact surfaces are determined by the properties of that surface. The coefficient of
+				friction (µ<sub>s</sub>/µ<sub>k</sub>) is a description of the roughness of the surface. The rougher the surface, the greater the
+				coefficient of friction.
+
+				<h6>Static friction (f<sub>s</sub>)</h6>
+				Static friction is the frictional force on a stationary object that opposes the tendency of motion of the object. The magnitude of the static friction will increase as the parallel component of the applied force is increased, until maximum static friction is reached. <i>f</i><sub>s</sub> <sup>max</sup> is the magnitude of friction when the object just starts to move.
+				<p></p>
+				<table>
+					<tr>
+						<th colspan="2"><i>f</i><sub>s</sub> <sup>max</sup> = μ<sub>s</sub>F<sub>N</sub></th>
+					</tr>
+					<tr>
+						<td><i>f</i><sub>s</sub> <sup>max</sup></td>
+						<td>maximum static friction (N)</td>
+					</tr>
+					<tr>
+						<td>μ<sub>s</sub></td>
+						<td>coefficient of friction (no unit)</td>
+					</tr>
+					<tr>
+						<td>F<sub>N</sub></td>
+						<td>normal force (N)</td>
+					</tr>
+				</table>
+				<h6>Kinetic friction (f<sub>k</sub>)</h6>
+				Kinetic friction is the frictional force on a
+				moving object that opposes the motion of
+				the object. The magnitude of the kinetic friction
+				is constant for the specific system at all velocities
+				greater than zero, and irrespective of the applied
+				force.
+				<p></p>
+				<table>
+					<tr>
+						<th colspan="2"><i>f</i><sub>k</sub> <sup>max</sup> = μ<sub>k</sub>F<sub>N</sub></th>
+					</tr>
+					<tr>
+						<td><i>f</i><sub>s</sub> <sup>max</sup></td>
+						<td>maximum kinetic friction (N)</td>
+					</tr>
+					<tr>
+						<td>μ<sub>k</sub></td>
+						<td>coefficient of friction (no unit)</td>
+					</tr>
+					<tr>
+						<td>F<sub>N</sub></td>
+						<td>normal force (N)</td>
+					</tr>
+				</table>
+				<p>If the applied force is greater than the maximum static friction, the object will start to move</p>
+				<p><img src="img/force diagram5.png" alt="Thumbnail Image" class="img-rounded" width="100%"/></p>
+			</p>
+           <!--     end extras -->
+    </div>
+
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Modal</h4>
+						</div>
+						<div class="modal-body">
+							Modal Content....
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+    <div class="space"></div>
+<!-- end container -->
+</div>
+<!-- end main -->
+
+</body>
+
+    <script src="../../jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../assets/js/gsdk-checkbox.js"></script>
+	<script src="../../assets/js/gsdk-radio.js"></script>
+	<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="../../assets/js/get-shit-done.js"></script>
+
+    <script src="../../assets/js/custom.js"></script>
+
+</html>

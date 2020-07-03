@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Title</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../bootstrap3/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="../../assets/css/gsdk.css" rel="stylesheet" />
+	<link href="../../assets/css/demo.css" rel="stylesheet" />
+    <link href="../../css/table.css" rel="stylesheet" />
+
+    <!--     Font Awesome     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <div id="navbar-full">
+    <div id="navbar">
+    <!--
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+        -->
+        <nav class="navbar navbar-ct-orange navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#gsdk" data-toggle="modal" data-target="#myModal">Geometric Optics</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end navbar -->
+<div id="mpc_start_code" class="3"></div>
+</div> <!-- end menu-dropdown -->
+<div class="main">
+    <div class="container tim-container" style="max-width:800px; padding-top:50px">
+			<br /><br />When waves reach a change in medium they can undergo:
+			<p>
+				<h6>REFLECTION</h6>
+				<p>Propagation of light from air into glass
+				and back into air.<br /><br />
+				Law of reflection: The angle of reflection
+				is equal to the angle of incidence.
+				The incident ray, reflected ray and the
+				normal all lie on the same plane.
+				<p><img src="img/wave diagram1.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				<!-- <img src="assets/img/mockup.png" > -->
+				<h6>DIFFRACTION</h6>
+				<p>The ability of a wave to spread out in
+					wavefronts as they pass through a
+					small aperture or around a sharp edge.
+					<p><img src="img/wave diagram2.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			</p>
+			<p>
+				<h6>REFRACTION</h6>
+				When light moves between media of different optical densities, the light
+				undergoes refraction.
+				<p><img src="img/wave diagram3.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			</p>
+			<p>
+				<strong>Refraction:</strong>
+				The bending of light as it moves between two media with
+				different optical densities as a result of the change in wave speed while
+				the frequency remains constant.
+			</p>
+			<p>
+				<strong>Normal:</strong>
+				An imaginary line perpendicular to the surface of an object.
+			</p>
+			<p>
+				<strong>Angle of Incidence:</strong>
+				Angle between an incident ray and the normal on the surface.
+			</p>
+			<p>
+				<strong>Angle of Refraction:</strong>
+				Angle between a refracted ray and the normal on the surface.
+			</p>
+			<p><br />
+				<h5>OPTICAL DENSITY AND REFRACTIVE INDEX</h5>
+				<h6>Optical density</h6>
+				Light can travel through a vacuum at 3×10<sup>8</sup> m·s<sup>−1</sup>, but slows down
+				as it moves through a transparent medium. The optical density is a
+				measure of the refracting power of a medium. The higher the optical
+				density, the more the light will be refracted or slowed down as it
+				moves through the medium.<br /><br />
+				The velocity of light through a medium is inversely proportional to
+				the optical density of the medium. The speed of light in the same
+				medium is constant.<br /><br />
+				The optical density can be quantified as a refractive index. The refractive
+				index is the ratio of the velocity of light in a vacuum to its
+				velocity in a specified medium and can be determined by:
+				<table>
+					<tr>
+						<td>n = <sup>c</sup>/<sub>v</sub></td>
+						<td>
+							n = refractive index (no unit)<br />
+							c = speed of light in vacuum (3×10<sup>8</sup> m·s<sup>−1</sup>)<br />
+							v = speed of light through medium (m·s<sup>−1</sup>)
+						</td>
+					</tr>
+				</table>
+			</p>
+			<br />
+			<p>
+				<h6>Refractive index</h6>
+				The refractive index is defined as the ratio of the speed of light in
+				vacuum (c) to the speed of light in a material (v). The refractive index
+				is directly proportional to the optical density and inversely proportional
+				to the velocity of light through the medium.<br /><br />
+				<table>
+					<tr>
+						<th>Medium</th>
+						<th>Refractive index</th>
+					</tr>
+					<tr>
+						<td>Vacuum</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Air</td>
+						<td>1,0003 ≈ 1</td>
+					</tr>
+					<tr>
+						<td>Water</td>
+						<td>1,33</td>
+					</tr>
+					<tr>
+						<td>Crown glass</td>
+						<td>1,50 − 1,62</td>
+					</tr>
+					<tr>
+						<td>Diamond</td>
+						<td>2,42</td>
+					</tr>
+				</table><br />
+				The refractive index (n) is also a quantitative description of the
+				amount of refraction (bending) that occurs when light moves
+				between media of different refractive indices. The angle of refraction
+				can be determined using Snell’s Law. There is a relationship between
+				the angles of incidence and refraction when light travels through the
+				boundary between two different optical media.
+			</p><br />
+			<p>
+				<h5>SNELL’S LAW</h5>
+				<strong>Snell’s Law:</strong>
+				The ratio of the angle of incidence and the
+				angle of refraction is equivalent to the reciprocal of the
+				ratio of refractive indices.<br />
+				<table>
+					<tr>
+						<th>n<sub><i>i</i></sub> sin θ<sub><i>i</i></sub> = n<sub><i>r</i></sub> sin θ<sub><i>r</i></sub></th>
+					</tr>
+					<tr>
+						<td>
+							n<sub><i>i</i></sub> = refractive index (origin medium)<br />
+							n<sub><i>r</i></sub> = refractive index (refracted medium)<br />
+							θ<sub><i>i</i></sub> = angle of incidence (origin medium)<br />
+							θ<sub><i>r</i></sub> = angle of refraction (refracted medium)
+						</td>
+					</tr>
+				</table><br /><br />
+				<table>
+					<tr>
+						<th>Change in optical density</th>
+						<th>Direction of bend</th>
+					</tr>
+					<tr>
+						<td>Less dense to more dense</td>
+						<td>Towards normal</td>
+					</tr>
+					<tr>
+						<td>More dense to less dense</td>
+						<td>Away from normal</td>
+					</tr>
+				</table>
+				<div id="images">
+						<div class="row">
+								<div class="col-md-4 col-sm-6">
+										<!-- <h6>Free body diagram</h6> -->
+										<img src="img/wave diagram4.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+								</div>
+								<div class="col-md-4 col-sm-6">
+										<!-- <h6>Force triangle</h6> -->
+										<img src="img/wave diagram5.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+								</div>
+						</div>
+				</div>
+			</p><br />
+			<p>
+				<h6>Example:</h6>
+				Light moves from air into glass (n = 1,55) at an angle of 25&deg;
+				to the normal. Determine the angle of refraction in the glass.
+				<blockquote>
+					n<sub><i>i</i></sub> sin θ<sub><i>i</i></sub> = n<sub><i>r</i></sub> sin θ<sub><i>r</i></sub><br />
+					1 sin 25&deg; = 1,55 sin n<sub><i>r</i></sub><br />
+					<sup>1 sin 25&deg;</sup>/<sub>1,55</sub> = sin θ<sub><i>r</i></sub><br />
+					θ<sub><i>r</i></sub> = 15,82&deg;
+				</blockquote>
+			</p><br />
+			<p>
+				<h5>CRITICAL ANGLE</h5>
+				<strong>Critical angle:</strong>The angle of incidence in the optically denser medium for which the
+				angle of refraction in the optically less dense medium is 90&deg;. The refracted ray
+				travels parallel to the boundary between the media.<br />
+				<table>
+					<tr>
+						<td>	n<sub><i>i</i></sub> sin θ<sub><i>i</i></sub> = n<sub><i>r</i></sub> sin 90&deg;</td>
+					</tr>
+				</table><br />
+				The relationship between the incident angle and the critical angle determines what
+				will happen to light when it moves between media from a high optical density to a
+				low optical density.<br />
+				<p><img src="img/wave diagram6.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				a) <strong>Refraction</strong><br />
+				θ<sub><i>i</i></sub> < θ<sub>crit</sub>
+				The light ray is refracted at a variable angle according to Snell’s Law.<br />
+				b) <strong>Refract 90&deg;</strong><br />
+				θ<sub><i>i</i></sub> = θ<sub>crit</sub>
+				The light ray travels along the border between the two media, at an angle of 90°
+				to the normal.<br />
+				c) <strong>Total Internal Reflection (TIR)</strong><br />
+				θ<sub><i>i</i></sub> > θ<sub>crit</sub>
+				The light ray is reflected internally into the incident medium. The angle of reflection
+				is equal to the angle of incidence.<br />
+			</p>
+			<p>
+				<h6>Conditions for Total Internal Reflection</h6>
+				Total Internal Reflection can only occur if:
+				<ul>
+					<li>Light moves from a more optically dense to a less optically dense medium.</li>
+					<li>The angle of incidence is greater than the critical angle.</li>
+				</ul>
+				<h6>Steps to calculate critical angle:</h6>
+				<ol>
+					<li>Identify the more and less dense media and their respective refractive indices.</li>
+					<li>Write out Snell’s Law formula.</li>
+					<li>Assign the bigger refractive index to n<sub><i>i</i></sub>.</li>
+					<li>Assign the smaller refractive index to n<sub><i>r</i></sub>.</li>
+					<li>Assign 90&deg; as θ<sub><i>r</i></sub>.</li>
+					<li>Determine θ<sub><i>i</i></sub>.</li>
+				</ol><br />
+				<h6>EXAMPLE:</h6>
+				Determine the critical angle if light
+				passes from crown glass (n = 1,60) to
+				water (n = 1,33).<br />
+				<blockquote>
+					n<sub><i>i</i></sub> sin θ<sub><i>i</i></sub> = n<sub><i>r</i></sub> sin θ<sub><i>r</i></sub><br />
+					1,60 sin θ<sub><i>i</i></sub> = 1,33 sin 90<br />
+					sin θ<sub><i>i</i></sub> = <sup>1,33 sin 90</sup>/<sub>1,60</sub> <br />
+					θ<sub><i>i</i></sub> = 56,23&deg;
+				</blockquote>
+			</p><br />
+			<p>
+				<h5>USES OF TOTAL INTERNAL REFLECTION</h5>
+				<p>Fibre optics<br /><img src="img/wave diagram7.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				Optical fibers are strands of flexible material strands that allow light to be
+				transmitted over long distances using Total Internal Reflection. Optical fibers
+				consist of an inner glass core with a high refractive index, surrounded by a
+				cladding. The cladding has to have a lower refractive index than the core.
+				Multiple optical fibres can be combined to form a fibre optic cable. Fibre optic
+				cable are primarily used in telecommunications and medicine.<br /><br />
+				<h6>Telecommunications</h6>
+				<ul>
+					<li>Light travels faster than current, therefore signal is faster in fibre optic cables than in copper wires.</li>
+					<li>Fibre optic cables are less vulnerable to interception and interference.</li>
+					<li>Fibre optic cables have very little resale value, making it less likely to be stolen.</li>
+				</ul><br />
+				<h6>Medicine</h6>
+				<ul>
+					<li>Fibre optics are used in endoscopes.</li>
+					<li>Endoscopes consists of 2 flexible fibre optic cables- one to produce light and another to return the image.</li>
+					<li>Enables doctors to examine a patient through natural openings in the body such as the mouth, limiting the need for surgery.</li>
+					<li>Key-hole surgery can be performed, limiting scarring and recovery time.</li>
+				</ul>
+			</p><br />
+			<p>
+				<h6>HUYGENS PRINCIPLE</h6>
+				Huygens’ Principle states that every
+				point on a wavefront can serve
+				as a point source for secondary,
+				circular wavelets with a speed
+				equal to that of the propagation
+				of the waves. After a time, t, the
+				new wavefront will be that of a surface
+				tangent to the secondary waves.<br />
+				<p><br /><img src="img/wave diagram8.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				A straight wavefront is a result of the superposition of infinite circular
+				waves.<br /><br />
+				When a wave passes through a small aperture or past a sharp edge,
+				it curves around the corners of the obstacle or aperture. This phenomena
+				is known as diffraction.<br /><br />
+				According to Huygens’ principle, each point on the wavefront is a
+				point source for a new wave, therefore only the wavefront that
+				passes the obstacle is able to continue moving in a straight line. No
+				new point sources are formed in the shadow region, resulting in
+				wavefronts that curve around the edges.<br />
+			</p>
+			<p>
+				<h6>DEGREE OF DIFFRACTION</h6>
+				The degree of diffraction is directly proportional to the
+				wavelength and inversely proportional to the width of
+				the slit according to:
+				<p><i>Diffraction ∝ <sup>λ</sup>/<sub>w</sub></i></p>
+				A narrower slit and longer wave produces more of a
+				curved pattern, in other words, more diffraction takes
+				place.
+				<div id="images">
+						<div class="row">
+								<div class="col-md-4 col-sm-6">
+										<h6>Wavelength</h6>
+										<img src="img/wave diagram9.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+								</div>
+								<div class="col-md-4 col-sm-6">
+										<h6>Slit width</h6>
+										<img src="img/wave diagram10.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+								</div>
+						</div>
+				</div>
+			</p><br />
+			<p>
+				<h6>DIFFRACTION OF LIGHT</h6>
+				When monochromatic light is passed through a narrow slit, a diffraction pattern
+				forms that consists of alternating light and dark bands. The light bands are as a
+				result of constructive interference. The dark bands form as a result of destructive
+				interference.<br />
+				<p><br /><img src="img/wave diagram11.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				Longer wavelengths are diffracted more, therefore red light will diffract more
+				than violet light.<br /><br />
+				<strong>
+					Longer wavelength = more diffraction / wider pattern<br />
+					Narrower slit = more diffraction / wider pattern
+				</strong><br /><br />
+				Single slit diffraction pattern:	<img src="img/wave diagram12.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+			</p>
+           <!--     end extras -->
+    </div>
+
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h6 class="modal-title" id="myModalLabel">Modal</h6>
+						</div>
+						<div class="modal-body">
+							Modal Content....
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+    <div class="space"></div>
+<!-- end container -->
+</div>
+<!-- end main -->
+
+</body>
+
+    <script src="../../jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../assets/js/gsdk-checkbox.js"></script>
+	<script src="../../assets/js/gsdk-radio.js"></script>
+	<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="../../assets/js/get-shit-done.js"></script>
+
+
+    <script src="../../assets/js/custom.js"></script>
+
+</html>

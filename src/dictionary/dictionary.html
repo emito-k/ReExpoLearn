@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Title</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <link href="../../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+  <link href="../../bootstrap3/css/font-awesome.css" rel="stylesheet" />
+
+  <link href="../../assets/css/gsdk.css" rel="stylesheet" />
+  <link href="../../assets/css/demo.css" rel="stylesheet" />
+  <link href="../../css/search_look.css" rel="stylesheet" />
+
+  <!--     Font Awesome     -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <div id="navbar-full">
+    <div id="navbar">
+      <!--
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+        -->
+      <nav class="navbar navbar-ct-orange navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#gsdk" data-toggle="modal" data-target="#myModal">Dictionary</a>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div><!--  end navbar -->
+
+  </div> <!-- end menu-dropdown -->
+
+  <div class="main">
+    <div class="container tim-container" style="max-width:800px; padding-top:50px">
+
+      <h4><strong>Physics dictionary&nbsp;</strong></h4>
+      <button onclick="whatIs();"><a href="#" data-toggle="modal" data-target="#myModal">GENERATE</a></button>
+      <button onclick="destroy();"><a href="#" data-toggle="modal" data-target="#myModal">FUN</a></button>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search here...">
+
+      <ul class="myUL" id="myUL">
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Scalar
+            <!-- A physical quantity that has magnitude only --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Vector
+            <!-- a physical quantity that has both magnitude and direction --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Resultant vector
+            <!-- the single vector which has the same effect as the original vectors acting together --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Distance
+            <!-- the length of path travelled (scalar quantity) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Displacement
+            <!-- a change in position (vector quantity) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Speed
+            <!-- the rate of change of distance (scalar quantity) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Velocity
+            <!-- the rate of change of displacement (vector quantity) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Acceleration
+            <!-- the rate of change of velocity (vector quantity) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Normal force
+            <!-- the force or the component of a force which a surface exerts on an object with which it is in contact, and which is perpendicular to the surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Frictional force
+            <!-- the force that opposes the motion of an object and which acts parallel to the surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Static frictional force
+            <!-- the force that opposes the tendency of motion of a stationary object relative to a surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Kinetic frictional force
+            <!-- the force that opposes the motion of a moving object relative to a surface. Frictional force is proportional to the normal force, is independent of the area of contact, is independent of the velocity of motion --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Newton's first law of motion
+            <!-- a body will remain in its state of rest or motion at constant velocity unless a non-zero resultant/net force acts on it --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Newton's second law of motion
+            <!-- when a resultant/net force acts on an object, the object will accelerate in the direction of the force at an acceleration directly proportional to the force and inversely proportional to the mass of the object --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Newton's third law of motion
+            <!-- when one body exerts a force on a second body, the second body exerts a force of equal magnitude in the opposite direction on the first body --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Newton's Law of Universal Gravitation
+            <!-- each body in the universe attracts every other body with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centres --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Weight
+            <!-- the gravitational force the Earth exerts on any object on or near its surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Speed of light
+            <!-- the speed of light is constant when travelling through a specific medium. (c = 3x10<sup>8</sup>m.s<sup>-1</sup> in a vacuum) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Refraction
+            <!-- a change of wave speed in different media, while the frequency remains constant --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Refractive index
+            <!-- the ratio of the speed of light in air to the speed of light in a specific medium --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Optical density
+            <!-- a measure of the speed of light or other electromagnetic wave through a medium" --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Normal
+            <!-- the imaginary line perpendicular to the surface between two different optical media --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Angle of incidence
+            <!-- the angle between the incident ray and the normal --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Angle of refraction
+            <!-- the angle between the refracted ray and the normal --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Snell’s law
+            <!-- gives the relationship between the angle of incidence, the angle of refraction and the refractive index when light moves from one medium to another --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Critical angle
+            <!-- the angle of incidence from which the refractive angle is 90&deg; --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Total internal reflection
+            <!-- the angle of incidence is greater than the critical angle and no refraction takes place, instead the ray is reflected --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Wavefront
+            <!-- an imaginary line that connects waves that are in phase --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Huygen’s principle
+            <!-- all points of a wavefront act like a point source. Each of these point sources (secondary sources) produce smaller circular wavelets moving forwards with the same speed as the wave. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Diffraction
+            <!-- the ability of a wave to spread out in wavefronts as they pass through a small aperture or around a sharp edge--></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Coulomb's law
+            <!-- the magnitude of the electrostatic force exerted by one point charge (Q<sub>1</sub>) on another point charge (Q<sub>2</sub>) is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance (r) between them --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Electric field
+            <!-- a region of space in which an electric charge experiences a force. The direction of the electric field at a point is the direction that a positive test charge would move if placed at that point. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Electric field at a point
+            <!-- The electric field at a point is the electrostatic force experienced per unit positive charge placed at that point. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Faraday’s law
+            <!-- when a conductor and magnetic field move relative to each other, an emf is induced across the ends of the conductor. The induced emf in the conductor is directly proportional to the rate of change of magnetic flux --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Ohmic conductor
+            <!-- a conductor that obeys Ohm’s law--></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Ohm's law
+            <!-- the potential difference across a conductor is directly proportional to the current in the conductor at constant temperature --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Non-Ohmic conductor
+            <!-- a conductor which does not obey Ohm’s law --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Internal resistance
+            <!-- resistance of the cell/ battery itself --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Power
+            <!-- the rate at which electrical energy is converted in an electric circuit and is measured in watts (W) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Kilowatt hour (kWh)
+            <!-- refers to the use of 1 kilowatt of electricity for 1 hour --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Electromotive force Emf
+            <!-- a force that causes the flow of electricity from one point to another --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Momentum
+            <!-- the product of an object's mass and its velocity. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Linear momentum
+            <!-- of an object is a vector quantity with the same direction as the velocity of the object. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Newton’s second law in terms of momentum
+            <!-- the net force acting on an object is equal to the rate of change of momentum of the object in the direction of the resultant/net force. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Impulse
+            <!-- the product of the resultant/net force acting on an object and the time the resultant/net force acts on the object. It is a vector quantity. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Closed/an isolated system (in Physics):
+            <!-- a system on which the resultant/net external force is zero. A closed/an isolated system excludes external forces that originate outside the colliding bodies, e.g. friction. Only internal forces, e.g. contact forces between the colliding objects, are considered. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Principle of conservation of linear momentum
+            <!-- the total linear momentum of a closed system remains constant (is conserved). --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Elastic collision
+            <!-- a collision where energy is conserved --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Inelastic collision
+            <!-- a collision where energy is not conserved. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Projectile
+            <!-- an object upon which the only force acting is the force of gravity. Projectiles fall freely with gravitational acceleration ‘g’ accelerate downwards with a constant acceleration irrespective of whether the projectile is moving upward or downward or is at maximum height. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Work done on an object by a constant force F
+            <!-- is FΔxcosθ , where F is the magnitude of the force, Δx the magnitude of the displacement and θ the angle between the force and the displacement. (Work is done by a force on an object – the use of 'work is done against a force', e.g. work done against friction, should be avoided.) Work is a scalar quantity and is measured in joules (J). --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Work-energy theorem
+            <!-- The net/total work done on an object is equal to the change in the object's kinetic energy OR the work done on an object by a resultant/net force is equal to the change in the object's kinetic energy. (Wnet = ΔE<sub>k</sub>). --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Conservative force
+            <!-- is a force for which the work done in moving an object between two points is independent of the path taken. <br />Eg. gravitational force, the elastic force in a spring, electrostatic forces (coulomb forces). --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Non-conservative force
+            <!-- is a force for which the work done in moving an object between two points depends on the path taken. <br />Eg. frictional force, air resistance, tension in a chord. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Energy
+            <!-- capacity to do work --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Principle of conservation of mechanical energy
+            <!-- the total mechanical energy (sum of gravitational potential energy and kinetic energy) in an isolated system remains constant. (FAT) --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Power
+            <!-- is the rate at which work is done or energy is expended. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Doppler Effect
+            <!-- there is a change in frequency (or pitch) of the sound detected by a listener because the sound source and the listener have different velocities relative to the medium of sound propagation. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Principle of magnetic induction
+            <!-- a changing magnetic field induces an emf in conductor. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Motor effect
+            <!-- when a current carrying conductor is placed in a magnetic field it will experience a force. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Rms value
+            <!-- Root mean square value is the DC potential difference/current which dissipates the same amount of energy as AC. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Photoelectric effect
+            <!-- the process whereby electrons are ejected from a metal surface when light of suitable frequency is incident on that surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Threshold frequency (f<sub>o</sub>)
+            <!-- the minimum frequency of light needed to emit electrons from a certain metal surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Work function (W<sub>o</sub>)
+            <!-- the minimum energy that an electron in the metal needs to be emitted from the metal surface --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Lenz’s Law
+            <!-- the induced current flows in a direction so as to set up a magnetic field to oppose the change in magnetic flux. --></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">ROYGBIV
+            <!-- acronym used to remember the colors of the visible spectrum, which stands for red, orange, yellow, green, blue, indigo, violet. --></a></li>
+      </ul>
+      <!-- <li><a href="#"  data-toggle="modal" data-target="#myModal" onclick="infoChan(this);">Name #comment definition #closecomment </a></li> -->
+      <!--     end extras -->
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Definition</h4>
+        </div>
+        <div class="modal-body">
+          <p id="define">Loading....
+          </p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <!-- end container -->
+  </div>
+  <!-- end main -->
+
+</body>
+
+<script src="../../main/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="../../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+<script src="../../assets/js/gsdk-checkbox.js"></script>
+<script src="../../assets/js/gsdk-radio.js"></script>
+<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+<script src="../../assets/js/get-shit-done.js"></script>
+
+<script src="js/search_engine.js"></script>
+
+</html>

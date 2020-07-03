@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Title</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../bootstrap3/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="../../assets/css/gsdk.css" rel="stylesheet" />
+    <link href="../../assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Font Awesome     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+		<link href="../../css/search_look.css" rel="stylesheet" />
+		<link href="../../css/table.css" rel="stylesheet" />
+
+</head>
+
+<body>
+ <div id="navbar-full">
+    <div id="navbar">
+    <!--
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+        -->
+        <nav class="navbar navbar-ct-orange navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#gsdk" data-toggle="modal" data-target="#myModal">Geometric optics and Electrostatics</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end navbar -->
+
+</div> <!-- end menu-dropdown -->
+<div id="mpc_start_code" class="5"></div>
+<!--
+<div id="mpc_start_code" class="number of question here"></div>
+<div class="on" id="q(question number here)">
+	<div class="normal" id="q(question number here)ans">Answer here</div>
+	<button onclick="show_answer(Machine count);" id="q(question number here)btn">Show answer</button>
+</div>
+I recommend you do this in order or suffer the conseqences
+ -->
+<div class="main">
+    <div class="container tim-container" style="max-width:800px; padding-top:100px">
+			<!-- PS P1 2013 1.5 c-->
+			<div class="on" id="q1">
+				A stationary observer is listening to the sound coming from a sound source. The listener hears a sound of a lower pitch when compared to that produced by the source.
+				<br /><br />What can you conclude about the source from this observation?<br /><br />
+				A The source is at rest.<br />
+				B The source is moving towards the listener.
+				<div class="normal" id="q1ans">C The source is moving away from the listener.</div>
+				D There is an obstacle between the source and the listener.<br />
+				<button onclick="show_answer(0);" id="q1btn">Show answer</button>
+			</div>
+			<!-- PS P1 2013 1.6 b-->
+			<div class="off" id="q2">
+			In a DC generator the current to the external circuit is delivered through the...<br /><br />
+			A coils.
+			<div class="normal" id="q2ans">B split rings (commutators).</div>
+			C battery.<br />
+			D slip rings.<br />
+				<button onclick="show_answer(1);" id="q2btn">Show answer</button>
+			</div>
+			<div class="off" id="q3">
+				In an experiment on the photoelectric effect, the frequency of the incident light is high enough to cause the removal of electrons from the surface of the metal.
+				<br /><br />The number of electrons ejected from the metal surface is proportional to the ...<br /><br />
+				<br /><br />A kinetic energy of the electrons.
+				<div class="normal" id="q3ans">B number of incident photons.</div>
+				C work function of the metal.<br />
+				D frequency of the incident light.<br />
+				<button onclick="show_answer(2);" id="q3btn">Show answer</button>
+			</div>
+
+			<button id="main_btn_pre" onclick="previous_question();">Previous</button>
+			<button id="main_btn_nex" onclick="next_question();">Next</button><br />
+
+           <!--     end extras -->
+    </div>
+	</div>
+
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Modal</h4>
+						</div>
+						<div class="modal-body">
+							Modal Content....
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+    <div class="space"></div>
+<!-- end container -->
+</div>
+<!-- end main -->
+
+</body>
+
+    <script src="../../main/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../assets/js/gsdk-checkbox.js"></script>
+	<script src="../../assets/js/gsdk-radio.js"></script>
+	<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="../../assets/js/get-shit-done.js"></script>
+	<script src="js/vectors.js" type="text/javascript"></script>
+    <script src="../../assets/js/custom.js"></script>
+
+</html>

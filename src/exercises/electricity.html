@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Title</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../../bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../bootstrap3/css/font-awesome.css" rel="stylesheet" />
+
+	<link href="../../assets/css/gsdk.css" rel="stylesheet" />
+	<link href="../../assets/css/demo.css" rel="stylesheet" />
+    <link href="../../css/table.css" rel="stylesheet" />
+
+    <!--     Font Awesome     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <div id="navbar-full">
+    <div id="navbar">
+    <!--
+        navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+        -->
+        <nav class="navbar navbar-ct-orange navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#gsdk" data-toggle="modal" data-target="#myModal">Electricity</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--  end navbar -->
+
+</div> <!-- end menu-dropdown -->
+
+<div class="main">
+    <div class="container tim-container" style="max-width:800px; padding-top:100px">
+			<h6>QUESTION 1</h6>
+			1.1The two graphs below represent the relationship between potential difference and current in a metal wire at two different constant temperatures, T<sub>1</sub> and T<sub>2</sub>.<br /><br />
+			<p align="center"><strong>GRAPHS OF POTENTIAL DIFFERENCE VERSUS CURRENT</strong><img src="img/electric diagram1.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			1.1.1	Calculate the resistance of the metal wire at temperature T<sub>1</sub>.	(3)<br /><br />
+			1.1.2	Which graph was obtained at the higher temperature?	Give a reason for the answer.	(3)<br /><br />
+			1.1.3	The metal wire is an ohmic conductor. Justify this statement by referring to the graphs.	(1)<br /><br />
+			1.1.4	Calculate the power dissipated in the metal wire when the current in it is 25 mA at temperature T<sub>2</sub>.
+			1.2
+			The ammeter in the circuit below shows the same reading regardless whether switches <strong>S<sub>1</sub></strong> and <strong>S<sub>2</sub></strong> are both open or both closed. (The internal resistance of the cell, as well as the resistances of the ammeter and the connecting wires, are negligible.)
+			<p align="center"><img src="img/electric diagram2.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			Calculate the:<br />
+			1.2.1 Reading on the ammeter (4)<br />
+			1.2.2 Resistance R (6)<br /><br />
+			<button onclick="switchQ(this,1);">View Answers</button>
+			<div id="question_1" class="off">
+				1.1.1 Resistance = gradient of graph
+				<blockquote>
+					<p><img src="img/electric diagram3.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				</blockquote><br />
+				1.1.2 Graph at T<sub>1</sub>
+				<small>Steeper/larger gradient</small>
+				∴ R is greater<br /><br />
+				∴ Temperature is higher<br /><br />
+				1.1.3 V is directly proportional to I at each of the temperatures T<sub>1</sub> and T<sub>2</sub>.<br /><br />
+				1.1.4
+				<blockquote>
+					P = VI <br />
+					= (2,5)(25 x 10<sup>-3</sup>) <br />
+					= 0,06(2)W
+				</blockquote>
+				1.2.1
+				<blockquote>
+					Both switches open:<br /><br />
+					R = 6 Ω + 1Ω + 2Ω = 9 Ω
+					<p><img src="img/electric diagram4.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				</blockquote>
+				1.2.2
+				<blockquote>
+					Both switches closed:<br />
+					<p><img src="img/electric diagram5.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				</blockquote>
+			</div><br />
+			<h6>Question 2</h6>
+			2.1 The circuit below is used to determine the resistance of resistor <strong>X</strong>.
+			<p align="center"><img src="img/electric diagram6.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			The 12 V battery has negligible internal resistance. When switch <strong>S</strong> is closed, the reading on the ammeter is 0,5 A.<br /><br />
+			2.1.1 State Ohm's law in words. (2)<br />
+			2.1.2 Calculate the resistance of resistor <strong>X</strong>. (5)<br /><br />
+			2.2 Study the circuit below. The battery has an emf of 12 V with negligible internal resistance.
+			<p align="center"><img src="img/electric diagram7.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			Switch <strong>S</strong> is closed.<br /><br />
+			2.2.1 Write down the potential difference across the 4 Ω resistor. (1)<br />
+			2.2.2 Calculate the reading on the ammeter. (5)<br />
+			2.2.3 Calculate the energy dissipated in the 12 Ω resistor in 2 minutes. (5)<br /><br />
+			<button onclick="switchQ(this,2);">View Answers</button>
+			<div id="question_2" class="off">
+				2.1.1
+				The potential difference across a conductor is directly proportional to the current in the conductor at constant temperature.<br />
+				<table><tr><td><strong>OR </strong>Provided temperature and other physical conditions are constant, the potential difference across a conductor is directly proportional to the current.</td></tr></table>
+				2.1.2
+				<blockquote>
+					V<sub>tot</sub> = IR<sub>tot</sub><br />
+					12 = (0,5)R<sub>tot</sub><br />
+					∴R<sub>tot</sub> = 24 Ω <br />
+					∴R<sub>X</sub> = (24 - 8)  = 16 Ω
+				</blockquote>
+
+				2.2.1 12V<br /><br />
+
+				2.2.2
+				<blockquote>
+					V<sub>4</sub> = I<sub>4</sub> R<sub>4Ω</sub><br />
+					12 = I<sub>4</sub>(4)<br />
+					I<sub>4Ω</sub> = 3 A<br /><br />
+					V<sub>X</sub> = I<sub>16Ω</sub>R<br />
+					12 = I<sub>16Ω</sub>16<br />
+					I<sub>16Ω</sub> = 0,75 A<br />
+					I<sub>A</sub> = (3 + 0,75)<br />
+					I<sub>A</sub> = 3,75 A
+				</blockquote>
+
+				2.2.3
+				<blockquote>
+				<img src="img/electric diagram8.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+				</blockquote>
+			</div><br />
+
+			<h6>Question 3</h6>
+			An experiment is done to verify that the potential difference across a conductor is directly proportional to the current in the conductor if the temperature stays constant.
+			Four cells, each with an emf of 1,5 V, are connected in series with an ammeter, switch S and a combination of a resistor R and resistors of 4 Ω and 6 Ω, as shown in the diagram.<br /><br />
+			Voltmeters V<sub>1</sub> and V<sub>2</sub> are connected across the battery and the parallel resistors respectively. The internal resistance of the battery and wires are negligible.<br /><br />
+			<p align="center"><img src="img/electric diagram9.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			3.1 Which law is represented by the underlined phrase above? (1)<br /><br />
+			The switch is now closed and six resistors (R<sub>1</sub>–R<sub>6</sub>), each with a different resistance, are placed in the place of R, one at a time. The voltmeter and ammeter readings are recorded. The results are as follows:<br />
+
+			<table>
+				<tr>
+					<th>RESISTORS AT R</th>
+					<th>READING ON VOLTMETER V<sub>2</sub> (V)</th>
+					<th>READING ON AMMETER (A)</th>
+				</tr>
+				<tr>
+					<td>R<sub>1</sub></td>
+					<td>1,2</td>
+					<td>0,5</td>
+				</tr>
+				<tr>
+					<td>R<sub>2</sub></td>
+					<td>1,4</td>
+					<td>0,6</td>
+				</tr>
+				<tr>
+					<td>R<sub>3</sub></td>
+					<td>1,9</td>
+					<td>0,8</td>
+				</tr>
+				<tr>
+					<td>R<sub>4</sub></td>
+					<td>2,4</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>R<sub>5</sub></td>
+					<td>2,9</td>
+					<td>1,2</td>
+				</tr>
+				<tr>
+					<td>R<sub>6</sub></td>
+					<td>3,6</td>
+					<td>1,5</td>
+				</tr>
+			</table>
+			<br /><br />3.2 Use the attached graph paper and draw a graph of potential difference versus current using the data in the table. (4)
+			<br /><br />3.3 What does the gradient of the graph represent? (1)
+			<br /><br />3.4 If voltmeter V<sub>2</sub> is only connected across the 4 Ω resistor, how will the gradient of the graph change? Write down only INCREASES, DECREASES or STAYS THE SAME. (1)
+			<br /><br />3.5 If the 4 Ω resistor is removed, how will the gradient of the graph change? Write down only INCREASES, DECREASES or STAYS THE SAME. (1)
+			<br /><br />3.6 Calculate the resistance of resistor R<sub>3</sub> using the values in the table. (5)
+			<br /><br />3.7 Calculate the energy dissipated in resistor R<sub>4</sub> in 10 seconds. (3)
+			<br /><br />
+			<button onclick="switchQ(this,3);">View Answers</button>
+			<div id="question_3" class="off">
+				3.1 Ohm's law<br />
+				3.2
+				<p align="center">Graph of Potential difference versus Current<img src="img/electric diagram10.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+				<br />
+				3.3 Resistance of the parallel connection<br />
+				3.4 Stay the same<br />
+				3.5 Increase<br />
+				3.6
+				<blockquote>
+					V<sub>tot</sub> = 6 V<br />
+					V<sub>R</sub> = V<sub>tot</sub> – V<sub>2</sub><br />
+					V<sub>R</sub> = 6 – 1,9 <br />
+					V<sub>R</sub>	= 4,1 V<br /><br />
+					<img src="img/electric diagram11.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+				</blockquote>
+				<br />3.7
+				<blockquote>
+					V<sub>R</sub> = 6 – 2,4 = 3,6 V<br />
+					<img src="img/electric diagram12.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+				</blockquote>
+			</div>
+			<h6>Question 4</h6>
+			4.1
+			The circuit below consists of a 6 Ω and 15 Ω resistor connected in parallel and an unknown resistor R, in series. An ammeter, a high-resistance voltmeter, a closed switch and battery are connected, as shown. The resistance of the battery and wires can be ignored.
+			<p align="center"><img src="img/electric diagram13.png" alt="Thumbnail Image" class="img-rounded img-responsive"/></p>
+			The total power dissipated in the parallel part of the circuit is 50 W.
+			<br /><br />4.1.1 Define the term power. (2)<br /><br />
+			4.1.2 Calculate the effective resistance of the parallel combination. (2)<br /><br />
+			4.1.3 Calculate the potential difference across the resistors in parallel. (3)<br /><br />
+			4.1.4 Calculate the current through resistor R. (3)<br /><br />
+
+			The switch in the circuit is now OPENED.
+			<br /><br />4.1.5 How will the reading on the voltmeter (V) be influenced? Choose from INCREASE, DECREASE or REMAIN THE SAME. (1)
+			<br /><br />4.1.6 Explain the answer to QUESTION 4.1.5. (3)
+			<br /><br />4.2 A geyser, labelled 2 000 W, is used for an average of 5 hours per day. The cost of electricity is 80 cents per kWh.
+			<br /><br />4.2.1 Calculate the energy used by the geyser for 5 hours per day. (4)
+			<br /><br />4.2.2 Calculate the cost of electricity to operate the geyser for a month with 30 days. (2)
+			<br /><br /><button onclick="switchQ(this,4);">View Answers</button>
+			<div id="question_4" class="off">
+			4.1.1 Power is the rate at which work is done or energy is transfered.<br /><br />
+			4.1.2
+			<blockquote>
+				<img src="img/electric diagram14.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+			</blockquote>
+			4.1.3
+			<blockquote>
+				<img src="img/electric diagram15.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+			</blockquote>
+			4.1.4
+			<blockquote>
+				<img src="img/electric diagram16.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+			</blockquote>
+			<br />4.1.5 Decreases<br />
+			4.1.6
+			<ul>
+				<li>The total resistance increases</li>
+				<li>The current in the circuit decreases</li>
+				<li>The resistance of R is constant, then the potential difference across R decreases.</li>
+			</ul><br />
+			4.2.1
+			<blockquote>
+				<img src="img/electric diagram17.png" alt="Thumbnail Image" class="img-rounded img-responsive"/>
+			</blockquote>
+		<br />	4.2.2
+			<blockquote>
+				Cost = price x unit kWh<br />
+				Cost = 80(2)(5)(30)<br />
+				Cost = 24 000 cents = R240<br />
+				(answer can be given in rand or cents)
+			</blockquote>
+			</div>
+					 <!--     end extras -->
+    </div>
+</div>
+
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Modal</h4>
+						</div>
+						<div class="modal-body">
+							Modal Content....
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+							<div class="divider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+    <div class="space"></div>
+<!-- end container -->
+</div>
+<!-- end main -->
+
+</body>
+
+<script type="text/javascript">
+
+	function other_method(other){
+		switch(other.className){
+			case "1":
+			document.getElementById("method1").className = "off";
+			document.getElementById("method2").className = "on";
+			other.className = "0";
+			break;
+			default:
+			document.getElementById("method1").className = "on";
+			document.getElementById("method2").className = "off";
+			other.className = "1";
+			break;
+		}
+	}
+
+	function other_methodA(){
+		var other = document.getElementById("photo2").className;
+		switch(other){
+			case "img-rounded img-responsive first":
+			document.getElementById("photo2").src = "img/force diagram10_2.png";
+			document.getElementById("photo2").className = "img-rounded img-responsive second";
+			break;
+			case "img-rounded img-responsive second":
+			document.getElementById("photo2").src = "img/force diagram10.png";
+			document.getElementById("photo2").className = "img-rounded img-responsive first";
+			break;
+			default:
+			document.getElementById("photo2").src = "img/force diagram10.png";
+			document.getElementById("photo2").className = "img-rounded img-responsive first";
+			break;
+		}
+	}
+</script>
+  <script src="../../jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="../../assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../../assets/js/gsdk-checkbox.js"></script>
+	<script src="../../assets/js/gsdk-radio.js"></script>
+	<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="../../assets/js/get-shit-done.js"></script>
+
+	<script src="../../assets/js/custom.js"></script>
+    <script src="../../assets/js/expo-learn.js"></script>
+
+</html>

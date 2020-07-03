@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul id="myUL">
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+      <li>Fifth</li>
+    </ul>
+    <button onclick="Process();">EDIT</button>
+  </body>
+  <script type="text/javascript">
+    var ul = document.getElementById("myUL"),
+    li = ul.getElementsByTagName("li");
+    function Process(){
+      var edit = prompt("Insert Number of the tag you want to change","0");
+      li[edit].innerHTML = prompt("CODE","<bold>Code</bold>");
+    }
+  </script>
+</html>

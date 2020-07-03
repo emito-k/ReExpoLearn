@@ -1,0 +1,35 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even){
+  background-color: #dadada;
+}
+/* Table correct */
+.correct tr{
+  background-color: #FF9705;
+}
+/* Text correct*/
+.correct {
+  color:#FF9705;
+}
+.text-berry{
+  color:#cc00ff;
+}
+.fraction td{
+  background-color: #C0C0C0;
+}
+.white{
+  background-color:white;
+  text-align: center;
+}
+.justwhite{
+  background-color:white;
+}
